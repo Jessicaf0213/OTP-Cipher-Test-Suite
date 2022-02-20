@@ -28,14 +28,14 @@ def test_decipher():
     assert decipher(pad, entxt) == plaintxt
 
 def test_encipher_shift_letters_by_1():
-    assert encipher("AAAAA", "ABCDE") == "BCDEFG"
+    assert encipher("BBBBB", "ABCDE") == "BCDEF"
 
 def test_decipher_shift_letters_by_1():
-    assert decipher("AAAAA", "BCDEFG") == "ABCDE"
+    assert decipher("BBBBB", "BCDEF") == "ABCDE"
 
 def test_encipher_shift_letters_by_25():
-    assert encipher("YYYYY", "A! BCDE") == "Z! ABCD"
+    assert encipher("YYYYY", "A! BCDE") == "Y! ZABC"
 
 def test_decipher_shift_letters_by_25():
-    assert decipher("YYYYY", "Z ?ABC D") == "A ?BCD E"
+    assert decipher("YYYYY", "Y ?ZAB C") == "A ?BCD E"
 
