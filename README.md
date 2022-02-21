@@ -15,7 +15,7 @@ Date: Feb.20, 2022
 
 ``unit-test.py`` contains several tests to check whether functions in ``cipher.py`` works as expected. 
 
-In ``cipher.py``, you can generate a one-time-pad by using function ``generatePad(size)". This function will generate a text file called "OPT.txt" in the directory. In the file, there will be a given number of randomly selected uppercase letters. The number of uppercase letters is decided by the argument size. 
+In ``cipher.py``, you can generate a one-time-pad by using function ``generatePad(size)``. This function will generate a text file called "OPT.txt" in the directory. In the file, there will be a given number of randomly selected uppercase letters. The number of uppercase letters is decided by the argument size. 
 You can also encipher a message using a pad with function ``encipher(pad,plaintxt)``. The argument pad represents a series of random uppercase letter, and the argument plaintxt represents the plainmessage that you want to encrypt. This function will return a encrypted message. 
 You can also decipher a message using a pad with function ``decipher(pad,entxt)``. The argument pad represents a series of random uppercase letter, and the argument entxt represents a encrypted message. This function will return a decrypted message.
 
